@@ -1,0 +1,36 @@
+### Listar todos os usuários
+GET http://localhost:3000/api/posts
+Content-Type: application/json
+
+### Criar um novo usuário
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "materia": "Matematica",
+    "assunto": "Formula do six seven",
+    "descricao": "Nesta aula iremos aprender que 20 + 20 + 20 + 7 = six seven",
+    "habilitado": 1
+}
+
+### Obter um usuário pelo ID
+GET http://localhost:3000/api/posts/{{user_id}}
+Content-Type: application/json
+
+### Atualizar um usuário
+PUT http://localhost:3000/api/posts/{{user_id}}
+Content-Type: application/json
+
+{
+     "name": "Agnes F Adriano",
+    "email": "agnes@example.com",
+    "age": 4
+}
+
+### Deletar um usuário
+DELETE http://localhost:3000/api/posts/{{user_id}}
+Content-Type: application/json
+
+### Obter um usuário pelo ID
+GET http://localhost:3000/api/posts/search{{assunto}}
+Content-Type: application/json
